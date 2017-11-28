@@ -188,3 +188,131 @@ Percentile: 100
 
 
 Standard linear regression produced the best variance score across all tests
+
+
+
+Average vote
+
+Starting data split: 80/20
+Percentile: 1
+	Linear Regression:
+		Mean squared error: 114.67
+		Variance score: 0.24
+		Explained variance score: 0.24
+	Support Vector Regression:
+		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+		Mean squared error: 99.55
+		Variance score: 0.34
+		Explained variance score: 0.34
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': 200}
+		Mean squared error: 2432670155.28
+		Variance score: -16133503.59
+		Explained variance score: -13749494.77
+Percentile: 5
+	Linear Regression:
+		Mean squared error: 109.38
+		Variance score: 0.27
+		Explained variance score: 0.28
+	Support Vector Regression:
+		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+		Mean squared error: 98.13
+		Variance score: 0.35
+		Explained variance score: 0.35
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+		Mean squared error: 611803942.61
+		Variance score: -4057491.83
+		Explained variance score: -3937580.40
+Percentile: 10
+	Linear Regression:
+		Mean squared error: 109.61
+		Variance score: 0.27
+		Explained variance score: 0.27
+	Support Vector Regression:
+		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+		Mean squared error: 106.70
+		Variance score: 0.29
+		Explained variance score: 0.29
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': 200}
+		Mean squared error: 853006595.23
+		Variance score: -5657151.40
+		Explained variance score: -5588490.52
+Percentile: 20
+	Linear Regression:
+		Mean squared error: 107.51
+		Variance score: 0.29
+		Explained variance score: 0.29
+	Support Vector Regression:
+		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+		Mean squared error: 105.90
+		Variance score: 0.30
+		Explained variance score: 0.30
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': 200}
+		Mean squared error: 122713617.51
+		Variance score: -813837.53
+		Explained variance score: -745181.81
+Percentile: 40
+	Linear Regression:
+		Mean squared error: 104.66
+		Variance score: 0.31
+		Explained variance score: 0.31
+	Support Vector Regression:
+		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+		Mean squared error: 106.27
+		Variance score: 0.30
+		Explained variance score: 0.30
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': 200}
+		Mean squared error: 544891451.71
+		Variance score: -3613727.20
+		Explained variance score: -3369268.07
+Percentile: 60
+	Linear Regression:
+		Mean squared error: 105.37
+		Variance score: 0.30
+		Explained variance score: 0.30
+	Support Vector Regression:
+		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+		Mean squared error: 101.20
+		Variance score: 0.33
+		Explained variance score: 0.33
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': 200}
+		Mean squared error: 212211741.24
+		Variance score: -1407390.42
+		Explained variance score: -1407075.45
+Percentile: 80
+	Linear Regression:
+		Mean squared error: 103.48
+		Variance score: 0.31
+		Explained variance score: 0.31
+	Support Vector Regression:
+		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+		Mean squared error: 100.84
+		Variance score: 0.33
+		Explained variance score: 0.33
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+		Mean squared error: 265088204.75
+		Variance score: -1758067.91
+		Explained variance score: -1597368.63
+Percentile: 100
+	Linear Regression:
+		Mean squared error: 105.65
+		Variance score: 0.30
+		Explained variance score: 0.30
+	Support Vector Regression:
+		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+		Mean squared error: 105.10
+		Variance score: 0.30
+		Explained variance score: 0.30
+	Multi-layer Perceptron Regressor:
+		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+		Mean squared error: 22544079.88
+		Variance score: -149511.67
+		Explained variance score: -129932.52
+
+SVR produced the best variance score for regression on average vote: 0.35
