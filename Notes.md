@@ -1,17 +1,273 @@
-Number of columns = 20
+Original number of columns = 20
 
-After: genres, production_countries, spoken_languages, orgininal_language
+One-hot encoding for columns: 
+* genres
+* production_countries
+* spoken_languages
+* orgininal_language
+
 Number of columns = 248
 
-Number of unique production companies = 5017
+Number of unique production companies = 5,017
+
 Top 100 production companies:
-[('Warner Bros.', 319), ('Universal Pictures', 311), ('Paramount Pictures', 285), ('Twentieth Century Fox Film Corporation', 222), ('Columbia Pictures', 201), ('New Line Cinema', 165), ('Metro-Goldwyn-Mayer (MGM)', 122), ('Touchstone Pictures', 118), ('Walt Disney Pictures', 114), ('Relativity Media', 102), ('Columbia Pictures Corporation', 96), ('Miramax Films', 94), ('Village Roadshow Pictures', 81), ('DreamWorks SKG', 79), ('Canal+', 75), ('United Artists', 75), ('Regency Enterprises', 69), ('Fox Searchlight Pictures', 64), ('Dune Entertainment', 59), ('Lionsgate', 56), ('Fox 2000 Pictures', 55), ('TriStar Pictures', 55), ('Dimension Films', 54), ('Working Title Films', 53), ('Summit Entertainment', 52), ('Amblin Entertainment', 49), ('The Weinstein Company', 42), ('StudioCanal', 41), ('New Regency Pictures', 40), ('Castle Rock Entertainment', 40), ('Screen Gems', 39), ('Spyglass Entertainment', 38), ('BBC Films', 38), ('Scott Rudin Productions', 37), ('Imagine Entertainment', 36), ('Film4', 36), ('Focus Features', 36), ('UK Film Council', 36), ('Legendary Pictures', 34), ('Davis Entertainment', 34), ('Lions Gate Films', 34), ('Revolution Studios', 34), ('Lakeshore Entertainment', 34), ('Silver Pictures', 33), ('Epsilon Motion Pictures', 32), ('Happy Madison Productions', 32), ('DreamWorks Animation', 31), ('Original Film', 30), ('Ingenious Film Partners', 29), ('Millennium Films', 29), ('Hollywood Pictures', 29), ('Scott Free Productions', 28), ('TSG Entertainment', 27), ('Studio Babelsberg', 26), ('Dune Entertainment III', 26), ('NPV Entertainment', 25), ('EuropaCorp', 24), ('Participant Media', 24), ('MTV Films', 23), ('Morgan Creek Productions', 23), ('Eon Productions', 22), ('Intermedia Films', 22), ('Nickelodeon Movies', 22), ('Alcon Entertainment', 22), ('Blumhouse Productions', 22), ('Jerry Bruckheimer Films', 21), ('Constantin Film Produktion', 20), ('France 2 Cinéma', 20), ('Apatow Productions', 20), ('Di Bonaventura Pictures', 19), ('Malpaso Productions', 19), ('40 Acres & A Mule Filmworks', 19), ('Walden Media', 18), ('Wild Bunch', 18), ('1492 Pictures', 17), ('Phoenix Pictures', 17), ('Anonymous Content', 17), ('TF1 Films Production', 17), ('Studio Canal', 17), ('Marvel Enterprises', 16), ('Revolution Sun Studios', 16), ('Pixar Animation Studios', 16), ('Vertigo Entertainment', 16), ('PolyGram Filmed Entertainment', 16), ('Mirage Enterprises', 16), ('Franchise Pictures', 16), ('Dark Castle Entertainment', 16), ('Orion Pictures', 16), ('Sony Pictures Classics', 16), ('DC Comics', 15), ('Lucasfilm', 15), ('Dino De Laurentiis Company', 15), ('Double Feature Films', 15), ('Jersey Films', 15), ("Donners' Company", 14), ('Ingenious Media', 14), ('Cruise/Wagner Productions', 14), ('Mutual Film Company', 14), ('Tribeca Productions', 14), ('Mosaic Media Group', 14)]
+* Warner Bros. (319)
+* Universal Pictures (311)
+* Paramount Pictures (285)
+* Twentieth Century Fox Film Corporation (222)
+* Columbia Pictures (201)
+* New Line Cinema (165)
+* Metro-Goldwyn-Mayer (MGM) (122)
+* Touchstone Pictures (118)
+* Walt Disney Pictures (114)
+* Relativity Media (102)
+* Columbia Pictures Corporation (96)
+* Miramax Films (94)
+* Village Roadshow Pictures (81)
+* DreamWorks SKG (79)
+* Canal+ (75)
+* United Artists (75)
+* Regency Enterprises (69)
+* Fox Searchlight Pictures (64)
+* Dune Entertainment (59)
+* Lionsgate (56)
+* Fox 2000 Pictures (55)
+* TriStar Pictures (55)
+* Dimension Films (54)
+* Working Title Films (53)
+* Summit Entertainment (52)
+* Amblin Entertainment (49)
+* The Weinstein Company (42)
+* StudioCanal (41)
+* New Regency Pictures (40)
+* Castle Rock Entertainment (40)
+* Screen Gems (39)
+* Spyglass Entertainment (38)
+* BBC Films (38)
+* Scott Rudin Productions (37)
+* Imagine Entertainment (36)
+* Film4 (36)
+* Focus Features (36)
+* UK Film Council (36)
+* Legendary Pictures (34)
+* Davis Entertainment (34)
+* Lions Gate Films (34)
+* Revolution Studios (34)
+* Lakeshore Entertainment (34)
+* Silver Pictures (33)
+* Epsilon Motion Pictures (32)
+* Happy Madison Productions (32)
+* DreamWorks Animation (31)
+* Original Film (30)
+* Ingenious Film Partners (29)
+* Millennium Films (29)
+* Hollywood Pictures (29)
+* Scott Free Productions (28)
+* TSG Entertainment (27)
+* Studio Babelsberg (26)
+* Dune Entertainment III (26)
+* NPV Entertainment (25)
+* EuropaCorp (24)
+* Participant Media (24)
+* MTV Films (23)
+* Morgan Creek Productions (23)
+* Eon Productions (22)
+* Intermedia Films (22)
+* Nickelodeon Movies (22)
+* Alcon Entertainment (22)
+* Blumhouse Productions (22)
+* Jerry Bruckheimer Films (21)
+* Constantin Film Produktion (20)
+* France 2 Cinéma (20)
+* Apatow Productions (20)
+* Di Bonaventura Pictures (19)
+* Malpaso Productions (19)
+* 40 Acres & A Mule Filmworks (19)
+* Walden Media (18)
+* Wild Bunch (18)
+* 1492 Pictures (17)
+* Phoenix Pictures (17)
+* Anonymous Content (17)
+* TF1 Films Production (17)
+* Studio Canal (17)
+* Marvel Enterprises (16)
+* Revolution Sun Studios (16)
+* Pixar Animation Studios (16)
+* Vertigo Entertainment (16)
+* PolyGram Filmed Entertainment (16)
+* Mirage Enterprises (16)
+* Franchise Pictures (16)
+* Dark Castle Entertainment (16)
+* Orion Pictures (16)
+* Sony Pictures Classics (16)
+* DC Comics (15)
+* Lucasfilm (15)
+* Dino De Laurentiis Company (15)
+* Double Feature Films (15)
+* Jersey Films (15)
+* "Donners' Company", 14)
+* Ingenious Media (14)
+* Cruise/Wagner Productions (14)
+* Mutual Film Company (14)
+* Tribeca Productions (14)
+* Mosaic Media Group (14)
+
 Number of columns = 347
 
 
-Number of unique keywords = 9813
+Number of unique keywords = 9,813
+
 Top 150 keywords:
-[('woman director', 324), ('independent film', 318), ('duringcreditsstinger', 307), ('based on novel', 197), ('murder', 189), ('aftercreditsstinger', 170), ('violence', 150), ('dystopia', 139), ('sport', 126), ('revenge', 118), ('sex', 111), ('friendship', 106), ('musical', 105), ('biography', 105), ('teenager', 99), ('3d', 98), ('love', 95), ('sequel', 94), ('suspense', 92), ('new york', 89), ('police', 84), ('los angeles', 81), ('high school', 80), ('alien', 76), ('prison', 72), ('nudity', 71), ('superhero', 69), ('family', 69), ('london england', 69), ('drug', 69), ('dying and death', 66), ('father son relationship', 65), ('daughter', 61), ('world war ii', 58), ('kidnapping', 57), ('wedding', 57), ('remake', 56), ('suicide', 56), ('serial killer', 56), ('magic', 55), ('friends', 54), ('corruption', 53), ('escape', 52), ('based on comic book', 52), ('hospital', 52), ('party', 52), ('time travel', 51), ('based on true story', 51), ('martial arts', 51), ('airplane', 50), ('investigation', 50), ('brother brother relationship', 49), ('survival', 49), ('fbi', 49), ('female nudity', 49), ('money', 48), ('blood', 48), ('future', 47), ('fight', 47), ('best friend', 46), ('secret', 46), ('cia', 46), ('music', 46), ('gay', 46), ("love of one's life", 45), ('lawyer', 45), ('zombie', 45), ('paris', 45), ('undercover', 44), ('war', 44), ('flashback', 44), ('small town', 44), ('based on young adult novel', 43), ('explosion', 43), ('new love', 43), ('witch', 42), ('death', 42), ('rescue', 42), ('jealousy', 42), ('conspiracy', 42), ('vampire', 42), ('wife husband relationship', 42), ('assassin', 42), ('rape', 42), ('shootout', 41), ('journalist', 41), ('prostitute', 41), ('divorce', 41), ('spy', 40), ('monster', 40), ('obsession', 40), ('teacher', 40), ('robbery', 40), ('soldier', 39), ('england', 39), ('dog', 39), ('new york city', 39), ('gore', 39), ('detective', 39), ('hotel', 39), ('adultery', 38), ('alcohol', 37), ('hitman', 37), ('hostage', 36), ('1970s', 36), ('ghost', 36), ('christmas', 36), ('marriage', 36), ('sister sister relationship', 36), ('relationship', 36), ('island', 35), ('holiday', 35), ('competition', 35), ('secret identity', 34), ('marvel comic', 34), ('saving the world', 34), ('brother sister relationship', 34), ('college', 34), ('infidelity', 34), ('romantic comedy', 34), ('dream', 34), ('gangster', 34), ('coming of age', 34), ('terrorist', 33), ('usa president', 33), ('helicopter', 33), ('slasher', 33), ('scientist', 32), ('doctor', 32), ('army', 32), ('usa', 32), ('blackmail', 32), ('fbi agent', 32), ('battle', 31), ('chase', 31), ('parents kids relationship', 31), ('ship', 30), ('post-apocalyptic', 30), ('based on video game', 30), ('nightmare', 30), ('gang', 30), ('psychopath', 30), ('neighbor', 30), ('mother daughter relationship', 30), ('drug dealer', 30), ('faith', 29), ('mutant', 29), ('hero', 29), ('rivalry', 29), ('california', 29)]
+* woman director (324)
+* independent film (318)
+* duringcreditsstinger (307)
+* based on novel (197)
+* murder (189)
+* aftercreditsstinger (170)
+* violence (150)
+* dystopia (139)
+* sport (126)
+* revenge (118)
+* sex (111)
+* friendship (106)
+* musical (105)
+* biography (105)
+* teenager (99)
+* 3d (98)
+* love (95)
+* sequel (94)
+* suspense (92)
+* new york (89)
+* police (84)
+* los angeles (81)
+* high school (80)
+* alien (76)
+* prison (72)
+* nudity (71)
+* superhero (69)
+* family (69)
+* london england (69)
+* drug (69)
+* dying and death (66)
+* father son relationship (65)
+* daughter (61)
+* world war ii (58)
+* kidnapping (57)
+* wedding (57)
+* remake (56)
+* suicide (56)
+* serial killer (56)
+* magic (55)
+* friends (54)
+* corruption (53)
+* escape (52)
+* based on comic book (52)
+* hospital (52)
+* party (52)
+* time travel (51)
+* based on true story (51)
+* martial arts (51)
+* airplane (50)
+* investigation (50)
+* brother brother relationship (49)
+* survival (49)
+* fbi (49)
+* female nudity (49)
+* money (48)
+* blood (48)
+* future (47)
+* fight (47)
+* best friend (46)
+* secret (46)
+* cia (46)
+* music (46)
+* gay (46), ("love of one's life", 45)
+* lawyer (45)
+* zombie (45)
+* paris (45)
+* undercover (44)
+* war (44)
+* flashback (44)
+* small town (44)
+* based on young adult novel (43)
+* explosion (43)
+* new love (43)
+* witch (42)
+* death (42)
+* rescue (42)
+* jealousy (42)
+* conspiracy (42)
+* vampire (42)
+* wife husband relationship (42)
+* assassin (42)
+* rape (42)
+* shootout (41)
+* journalist (41)
+* prostitute (41)
+* divorce (41)
+* spy (40)
+* monster (40)
+* obsession (40)
+* teacher (40)
+* robbery (40)
+* soldier (39)
+* england (39)
+* dog (39)
+* new york city (39)
+* gore (39)
+* detective (39)
+* hotel (39)
+* adultery (38)
+* alcohol (37)
+* hitman (37)
+* hostage (36)
+* 1970s (36)
+* ghost (36)
+* christmas (36)
+* marriage (36)
+* sister sister relationship (36)
+* relationship (36)
+* island (35)
+* holiday (35)
+* competition (35)
+* secret identity (34)
+* marvel comic (34)
+* saving the world (34)
+* brother sister relationship (34)
+* college (34)
+* infidelity (34)
+* romantic comedy (34)
+* dream (34)
+* gangster (34)
+* coming of age (34)
+* terrorist (33)
+* usa president (33)
+* helicopter (33)
+* slasher (33)
+* scientist (32)
+* doctor (32)
+* army (32)
+* usa (32)
+* blackmail (32)
+* fbi agent (32)
+* battle (31)
+* chase (31)
+* parents kids relationship (31)
+* ship (30)
+* post-apocalyptic (30)
+* based on video game (30)
+* nightmare (30)
+* gang (30)
+* psychopath (30)
+* neighbor (30)
+* mother daughter relationship (30)
+* drug dealer (30)
+* faith (29)
+* mutant (29)
+* hero (29)
+* rivalry (29)
+* california (29)
+
 Number of columns = 496
 
 
@@ -19,300 +275,337 @@ Number of columns = 496
 Regression for revenue:
 
 Percentile: 1
-	Linear Regression:
-		Mean squared error: 6512572838733131.00
-		Variance score: 0.75
-		Explained variance score: 0.75
+
+Linear Regression:
+* Mean squared error: 6512572838733131.00
+* Variance score: 0.75
+* Explained variance score: 0.75
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326492826145536.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326492826145536.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 9453789112746722.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 9453789112746722.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 5
-	Linear Regression:
-		Mean squared error: 6515237972215048.00
-		Variance score: 0.75
-		Explained variance score: 0.75
+
+Linear Regression:
+* Mean squared error: 6515237972215048.00
+* Variance score: 0.75
+* Explained variance score: 0.75
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326493046920228.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326493046920228.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 9440303533448342.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 9440303533448342.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 10
-	Linear Regression:
-		Mean squared error: 6694911539713779.00
-		Variance score: 0.74
-		Explained variance score: 0.75
+
+Linear Regression:
+* Mean squared error: 6694911539713779.00
+* Variance score: 0.74
+* Explained variance score: 0.75
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326493082690620.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326493082690620.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
-		Mean squared error: 9438186292437674.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+* Mean squared error: 9438186292437674.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 20
-	Linear Regression:
-		Mean squared error: 6444263573554765.00
-		Variance score: 0.75
-		Explained variance score: 0.75
+
+Linear Regression:
+* Mean squared error: 6444263573554765.00
+* Variance score: 0.75
+* Explained variance score: 0.75
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326493284611060.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326493284611060.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (300, 100)}
-		Mean squared error: 9561298575872046.00
-		Variance score: 0.63
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (300, 100)}
+* Mean squared error: 9561298575872046.00
+* Variance score: 0.63
+* Explained variance score: 0.64
 
 
 Percentile: 40
-	Linear Regression:
-		Mean squared error: 6763549040295243.00
-		Variance score: 0.74
-		Explained variance score: 0.74
+
+Linear Regression:
+* Mean squared error: 6763549040295243.00
+* Variance score: 0.74
+* Explained variance score: 0.74
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326496083925284.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326496083925284.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 9462442019321460.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 9462442019321460.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 60
-	Linear Regression:
-		Mean squared error: 6987306248416148.00
-		Variance score: 0.73
-		Explained variance score: 0.73
+
+Linear Regression:
+* Mean squared error: 6987306248416148.00
+* Variance score: 0.73
+* Explained variance score: 0.73
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326499415217480.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326499415217480.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
-		Mean squared error: 9494793627385050.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+* Mean squared error: 9494793627385050.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 80
-	Linear Regression:
-		Mean squared error: 7059866577808507.00
-		Variance score: 0.73
-		Explained variance score: 0.73
+
+Linear Regression:
+* Mean squared error: 7059866577808507.00
+* Variance score: 0.73
+* Explained variance score: 0.73
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326510408886056.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326510408886056.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 300}
-		Mean squared error: 9446737114798510.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 300}
+* Mean squared error: 9446737114798510.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
 Percentile: 100
-	Linear Regression:
-		Mean squared error: 7225358348443042.00
-		Variance score: 0.72
-		Explained variance score: 0.72
+
+Linear Regression:
+* Mean squared error: 7225358348443042.00
+* Variance score: 0.72
+* Explained variance score: 0.72
 
 
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 30326525569035440.00
-		Variance score: -0.16
-		Explained variance score: 0.00
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 30326525569035440.00
+* Variance score: -0.16
+* Explained variance score: 0.00
 
 
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (300, 100)}
-		Mean squared error: 9485843649813920.00
-		Variance score: 0.64
-		Explained variance score: 0.64
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (300, 100)}
+* Mean squared error: 9485843649813920.00
+* Variance score: 0.64
+* Explained variance score: 0.64
 
 
-
-Standard linear regression produced the best variance score across all tests
-
+Standard linear regression produced the best variance score across all tests for revenue.
 
 
 Average vote
 
 Starting data split: 80/20
+
 Percentile: 1
-	Linear Regression:
-		Mean squared error: 114.67
-		Variance score: 0.24
-		Explained variance score: 0.24
-	Support Vector Regression:
-		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
-		Mean squared error: 99.55
-		Variance score: 0.34
-		Explained variance score: 0.34
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 2432670155.28
-		Variance score: -16133503.59
-		Explained variance score: -13749494.77
+Linear Regression:
+* Mean squared error: 114.67
+* Variance score: 0.24
+* Explained variance score: 0.24
+
+Support Vector Regression:
+* Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+* Mean squared error: 99.55
+* Variance score: 0.34
+* Explained variance score: 0.34
+
+Multi-layer Perceptron Regressor:
+	Best parameter settings: {'hidden_layer_sizes': 200}
+	Mean squared error: 2432670155.28
+	Variance score: -16133503.59
+	Explained variance score: -13749494.77
+
 Percentile: 5
-	Linear Regression:
-		Mean squared error: 109.38
-		Variance score: 0.27
-		Explained variance score: 0.28
-	Support Vector Regression:
-		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
-		Mean squared error: 98.13
-		Variance score: 0.35
-		Explained variance score: 0.35
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
-		Mean squared error: 611803942.61
-		Variance score: -4057491.83
-		Explained variance score: -3937580.40
+
+Linear Regression:
+* Mean squared error: 109.38
+* Variance score: 0.27
+* Explained variance score: 0.28
+
+Support Vector Regression:
+* Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+* Mean squared error: 98.13
+* Variance score: 0.35
+* Explained variance score: 0.35
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+* Mean squared error: 611803942.61
+* Variance score: -4057491.83
+* Explained variance score: -3937580.40
+
 Percentile: 10
-	Linear Regression:
-		Mean squared error: 109.61
-		Variance score: 0.27
-		Explained variance score: 0.27
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 106.70
-		Variance score: 0.29
-		Explained variance score: 0.29
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 853006595.23
-		Variance score: -5657151.40
-		Explained variance score: -5588490.52
+
+Linear Regression:
+* Mean squared error: 109.61
+* Variance score: 0.27
+* Explained variance score: 0.27
+
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 106.70
+* Variance score: 0.29
+* Explained variance score: 0.29
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 853006595.23
+* Variance score: -5657151.40
+* Explained variance score: -5588490.52
+
 Percentile: 20
-	Linear Regression:
-		Mean squared error: 107.51
-		Variance score: 0.29
-		Explained variance score: 0.29
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 105.90
-		Variance score: 0.30
-		Explained variance score: 0.30
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 122713617.51
-		Variance score: -813837.53
-		Explained variance score: -745181.81
+
+Linear Regression:
+* Mean squared error: 107.51
+* Variance score: 0.29
+* Explained variance score: 0.29
+
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 105.90
+* Variance score: 0.30
+* Explained variance score: 0.30
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 122713617.51
+* Variance score: -813837.53
+* Explained variance score: -745181.81
+
 Percentile: 40
-	Linear Regression:
-		Mean squared error: 104.66
-		Variance score: 0.31
-		Explained variance score: 0.31
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 106.27
-		Variance score: 0.30
-		Explained variance score: 0.30
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 544891451.71
-		Variance score: -3613727.20
-		Explained variance score: -3369268.07
+
+Linear Regression:
+* Mean squared error: 104.66
+* Variance score: 0.31
+* Explained variance score: 0.31
+
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 106.27
+* Variance score: 0.30
+* Explained variance score: 0.30
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 544891451.71
+* Variance score: -3613727.20
+* Explained variance score: -3369268.07
+
 Percentile: 60
-	Linear Regression:
-		Mean squared error: 105.37
-		Variance score: 0.30
-		Explained variance score: 0.30
-	Support Vector Regression:
-		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
-		Mean squared error: 101.20
-		Variance score: 0.33
-		Explained variance score: 0.33
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': 200}
-		Mean squared error: 212211741.24
-		Variance score: -1407390.42
-		Explained variance score: -1407075.45
+
+Linear Regression:
+* Mean squared error: 105.37
+* Variance score: 0.30
+* Explained variance score: 0.30
+
+Support Vector Regression:
+* Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+* Mean squared error: 101.20
+* Variance score: 0.33
+* Explained variance score: 0.33
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': 200}
+* Mean squared error: 212211741.24
+* Variance score: -1407390.42
+* Explained variance score: -1407075.45
+
 Percentile: 80
-	Linear Regression:
-		Mean squared error: 103.48
-		Variance score: 0.31
-		Explained variance score: 0.31
-	Support Vector Regression:
-		Best parameter settings: {'C': 100, 'kernel': 'rbf'}
-		Mean squared error: 100.84
-		Variance score: 0.33
-		Explained variance score: 0.33
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
-		Mean squared error: 265088204.75
-		Variance score: -1758067.91
-		Explained variance score: -1597368.63
+
+Linear Regression:
+* Mean squared error: 103.48
+* Variance score: 0.31
+* Explained variance score: 0.31
+
+Support Vector Regression:
+* Best parameter settings: {'C': 100, 'kernel': 'rbf'}
+* Mean squared error: 100.84
+* Variance score: 0.33
+* Explained variance score: 0.33
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+* Mean squared error: 265088204.75
+* Variance score: -1758067.91
+* Explained variance score: -1597368.63
+
 Percentile: 100
-	Linear Regression:
-		Mean squared error: 105.65
-		Variance score: 0.30
-		Explained variance score: 0.30
-	Support Vector Regression:
-		Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
-		Mean squared error: 105.10
-		Variance score: 0.30
-		Explained variance score: 0.30
-	Multi-layer Perceptron Regressor:
-		Best parameter settings: {'hidden_layer_sizes': (100, 100)}
-		Mean squared error: 22544079.88
-		Variance score: -149511.67
-		Explained variance score: -129932.52
+
+Linear Regression:
+* Mean squared error: 105.65
+* Variance score: 0.30
+* Explained variance score: 0.30
+
+Support Vector Regression:
+* Best parameter settings: {'C': 1000, 'kernel': 'rbf'}
+* Mean squared error: 105.10
+* Variance score: 0.30
+* Explained variance score: 0.30
+
+Multi-layer Perceptron Regressor:
+* Best parameter settings: {'hidden_layer_sizes': (100, 100)}
+* Mean squared error: 22544079.88
+* Variance score: -149511.67
+* Explained variance score: -129932.52
 
 SVR produced the best variance score for regression on average vote: 0.35
