@@ -1,3 +1,9 @@
 # ml-2017-final
 
 Data source: https://www.kaggle.com/tmdb/tmdb-movie-metadata
+
+Proposal
+* This project would use data from existing movies to solve two types of problems. First, it would use regression to predict the revenue of a movie. A separate experiment would use regression to predict the average vote. The second type of problem would be to classify the genres of a movie based on the summary, title, and other features. The data is hosted on Kaggle (https://www.kaggle.com/tmdb/tmdb-movie-metadata), but the source is The Movie Database (TMDb). The dataset contains 4,803 instances.
+* There would not be any additional collection of movie data. However, this dataset would need to be preprocessed. For the classification segment of this project, it would need to use some natural language processing methods to process the text content. Some of the features are probably unnecessary, so they will be dropped. Other features need to be standardized, such as budget. A few of the features are stored as JSON so they will need to be parsed into their own features.
+* The features in the dataset include: budget, genres, homepage, id, keywords, title, language, overview (synopsis), popularity, production companies, production countries, release date, revenue, runtime, spoken languages, status, tagline, average vote, and vote count. Most of these fields will be used with the exception of homepage and maybe a couple others. It is unlikely that any new feature would be created.
+* Since most of the data is already available in this dataset more time will be spent on the classification and regression part of this project. As described above, there would be three tasks: predicting revenue, predicting average vote, and classifying genres. For each of these tasks, the “expected experiments” described in the document would be performed.
